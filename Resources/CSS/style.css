@@ -7,6 +7,8 @@ body {
     background-image: url("../Images/blob-scene-haikei (2).svg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #131534;
+    overflow-y: hidden;
 }
 nav {
     padding: 20px;
@@ -359,6 +361,12 @@ h2 {
   .contact_footer {
     margin-top: 15%;
     margin-bottom: 15%;
+  }
+
+  @media (max-width: 900px){
+    body {
+      overflow-y: scroll;
+    }
   }
 
   @media (max-width: 500px) {

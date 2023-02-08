@@ -1,11 +1,17 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const themeLink = document.querySelector('#theme');
+  const themeMode = localStorage.getItem('themeMode') || 'light';
+
+  if (themeMode === 'dark') {
+    themeLink.setAttribute('href', 'Resources/CSS/darkstyle.css');
+  } else {
+    themeLink.setAttribute('href', 'Resources/CSS/style.css');
+  }
+});
+
 function toggleTheme() {
-    // Obtains an array of all <link>
-    // elements.
-    // Select your element using indexing.
     var theme = document.getElementsByTagName('link')[0];
 
-    // Change the value of href attribute 
-    // to change the css sheet.
     if (theme.getAttribute('href') == 'Resources/CSS/style.css') {
         theme.setAttribute('href', 'Resources/CSS/darkstyle.css');
     } else {
