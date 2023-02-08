@@ -179,6 +179,10 @@ li a {
     font-size: 1.2rem;
 }
 
+.project_link:hover {
+  font-style: italic;
+}
+
 #Second_Container_2 {
     padding: 20px;
     margin: 20px;
